@@ -16,7 +16,8 @@ function trocaTema(){
 }
 
   return (
-    < ThemeProvider theme={estaUsandoTemaDark ? temaDark : temaLight}>
+    <ThemeProvider theme={estaUsandoTemaDark ? temaDark : temaLight}>
+
     <EstiloGlobal/>
     <Sidebar trocaTema={trocaTema} />
     <Container>
@@ -26,7 +27,7 @@ function trocaTema(){
     </main>
     </Container>
 
-    </ ThemeProvider>
+    </ThemeProvider>
   )
 }
 
