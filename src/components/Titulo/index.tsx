@@ -1,11 +1,13 @@
-import { Titulo as TituloEstilos } from "./styles";
+/* eslint-disable react/react-in-jsx-scope */
+import { Titulo as TituloEstilos } from './styles'
 
-export type Props ={
-  shildren:string;
-  fontSize?: number;
+export type Props = {
+  children: string
+  fontSize?: number
 }
 
-// eslint-disable-next-line react/react-in-jsx-scope
-const Titulo = (props:Props)=> <TituloEstilos fontSize={props.fontSize}>{props.shildren}</TituloEstilos>
+const Titulo = (props: Props) => (
+  <TituloEstilos fontSize={props.fontSize}>{props.children}</TituloEstilos>
+)
 
-export default Titulo;
+export default Titulo

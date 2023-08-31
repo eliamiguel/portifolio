@@ -1,9 +1,10 @@
+/* eslint-disable react/react-in-jsx-scope */
+import Paragrafo from '../Paragrafo'
+import Titulo from '../Titulo'
+import { Card, LinkBotao } from './styles'
 
-import Paragrafo from "../Paragrafo";
-import Titulo from "../Titulo";
-import { Card, LinkBotao } from "./styles";
-
-const Projeto = ()=>(
+const Projeto = () => (
+  // eslint-disable-next-line react/react-in-jsx-scope
   <Card>
     <Titulo>Projeto Lista de tarefas</Titulo>
     <Paragrafo tipo="secundario">Lista de tarefas feita com VueJS</Paragrafo>
@@ -11,4 +12,4 @@ const Projeto = ()=>(
   </Card>
 )
 
-export default Projeto;
+export default Projeto

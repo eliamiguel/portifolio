@@ -1,13 +1,16 @@
-import { P } from "./styles";
+/* eslint-disable react/react-in-jsx-scope */
+import { P } from './styles'
 
-export type props ={
-  shildren:string
-  tipo?:'principal' | 'secundario'
-  fontSize?:number
-
+export type props = {
+  children: string
+  tipo?: 'principal' | 'secundario'
+  fontSize?: number
 }
 
-// eslint-disable-next-line react/react-in-jsx-scope
-const Paragrafo = ({shildren, tipo ="principal", fontSize}: props)=> <P fontSize={fontSize}  tipo={tipo}>{shildren}</P>
+const Paragrafo = ({ children, tipo = 'principal', fontSize }: props) => (
+  <P fontSize={fontSize} tipo={tipo}>
+    {children}
+  </P>
+)
 
-export default Paragrafo;
+export default Paragrafo

@@ -1,8 +1,6 @@
-import { FotoPerfil } from "./styles";
+import { FotoPerfil } from './styles'
 
-const Avatar = ()=> <FotoPerfil src="https://github.com/eliamiguel.png"  />
+// eslint-disable-next-line react/react-in-jsx-scope
+const Avatar = () => <FotoPerfil src="https://github.com/eliamiguel.png" />
 
-export default Avatar;
-
-
-
+export default Avatar
